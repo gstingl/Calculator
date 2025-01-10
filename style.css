@@ -2,6 +2,11 @@
     margin: 0px;
 }
 
+@font-face {
+    font-family: calculator;
+    src: url(/Calculator.ttf);
+}
+
 body {
     display: flex;
     justify-content: center;
@@ -20,15 +25,19 @@ body {
 
 #display {
     width: 375px;
-    height: 70px;
+    height: 15%;
     margin: 10px;
     margin-top: 20px;
     background-color: rgb(190, 190, 190);
     border-radius: 5px;
+    font-family: calculator;
+    font-size: 60px;
+    text-align: end;
+    
 }
 
 .operators {
-    height: 15%;
+    height: 12%;
     width: 375px;
     margin: 10px;
     margin-top: 5px;
@@ -36,7 +45,7 @@ body {
 }
 
 .numberPad {
-    height: 85%;
+    height: 65%;
     width: 375px;
     margin: 10px;
     margin-top: 5px;
