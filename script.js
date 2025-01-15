@@ -5,7 +5,7 @@ let secondInput = '';
 let operator = '';
 
 function add(numOne, numTwo) {
-    return numOne + numTwo;
+    displayValue = numOne + numTwo;
 }
 
 function subtract(numOne, numTwo) {
@@ -17,11 +17,14 @@ function multiply(numOne, numTwo) {
 }
 
 function divide(numOne, numTwo) {
-    return numOne / numTwo;
+    displayValue = numOne / numTwo;
 }
 
 function operate(operatorFunc, numOne, numTwo) {
-    operatorFunc(numOne, numTwo);
+    let funcCall = Function(operatorFunc);
+    Number(previousInput);
+    Number(secondInput);
+    funcCall(numOne, numTwo);
     previousInput = displayValue;
     calcDisplay.innerHTML = displayValue;
 }
